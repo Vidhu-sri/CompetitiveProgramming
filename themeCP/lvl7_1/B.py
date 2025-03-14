@@ -1,0 +1,1 @@
+Solution = type("", (), {"findDifferentBinaryString": lambda _, nums: next(s for x in range(len(nums) + 1) if (s := format(x, f'0{len(nums)}b')) not in nums)})
